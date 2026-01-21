@@ -31,7 +31,7 @@ export type State = {
         status?: string[];
     };
     message: string | null;
-};
+} | undefined;
 
 export async function createInvocie(prevState: State,formData: FormData) {
     const validatedFields = CreateInvoice.safeParse({
